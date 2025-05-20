@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;  
+    padding: 0;
+}
+
+body{
+   background-color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1C1C;
+    width: 100%;
+    height: 15vh;
+    color: #fff;
+}
+
+.logo img{
+    width: 50%;
+    padding: 10px;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.usuario img{
+    width: 70px;
+}
+
+.usuario img:hover{
+    width: 80px;
+    
+}
+
+.conteudo{
+    display: flex;
+
+}
+
+article{
+    background-color:  #D3D3D3;
+    height: 85vh;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container-menu{
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+
+ .menu img{
+    margin-top: 20px;
+    width: 25%;  
+    margin-left: auto;
+    margin-right: auto;  
+ }
+
+ .menu a{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1F1C1C;
+ }
+
+ .menu h3{
+    display: flex;
+    justify-content: center;
+ }
+/*-------------*/
+.form-container {
+      background-color: #fff;
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+    }
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+    .form-group label {
+      width: 150px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+      flex: 1;
+      padding: 0px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 10px;
+    }
+
+    .checkbox-group label {
+      width: 100px;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
