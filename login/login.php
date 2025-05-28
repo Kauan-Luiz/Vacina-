@@ -1,5 +1,6 @@
+<?php
 
-
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@
                     <a href=""><img src="../img/logo.png" alt="" class="logo"></a>
                 </div>
 
-                <form action="" method="post">
+                <form action="teste-login.php" method="post">
                     <div>
                         <label for="">Email</label><br>
                         <input type="text" name="email" >
@@ -36,11 +37,11 @@
                     <div class="container-button">
                         
                         <div class="entry">
-                         <a href="../PaginaInicial.html" >Entrar</a>
+                         <input type="submit" name="submit" class="entry" value="Entrar">
                         </div>
 
                         
-                        <a href="../cadastro/cadastro.html" class="create-acount">Criar conta</a>                    
+                        <a href="../cadastro/cadastro.php" class="create-acount">Criar conta</a>                    
                     </div>
                 </form>
 

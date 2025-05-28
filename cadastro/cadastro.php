@@ -1,3 +1,22 @@
+<?php
+    include_once("../conexao.php");
+
+    if(isset($_POST['submit']))
+    {
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')");
+    header("Location: ../login/login.php");
+    exit();
+
+    }
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -20,7 +39,7 @@
                     <a href=""><img src="../img/logo.png" alt="" class="logo"></a>
                 </div>
 
-                <form class="form" action="" method="POST">
+                <form class="form" action="cadastro.php" method="POST">
                     <div>
                         <label for="">Usuario</label><br>
                         <input type="text" name="nome" required>
