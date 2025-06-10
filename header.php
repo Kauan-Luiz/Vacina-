@@ -1,9 +1,19 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['id_usuario'])) {
+    header('Location: login.php');
+    exit();
+}
+
+$nomeUsuario = $_SESSION['nome_usuario'];
+?>
 <header>
         <div class="logo">
             <img src="img/logo.png" alt="" srcset="">
         </div>
         <div class="usuario">
-            <p>Usuario</p>
+            <p><?php echo htmlspecialchars($nomeUsuario); ?></p>
             <img src="img/usuario.png" alt="">  
         </div>
     </header>
